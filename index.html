@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WedDev Vishal | Front End Developer</title>
+    <link rel="stylesheet" href="./home.css">
+    
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+<div class="maincontainer">
+
+    <div class="mobile">
+        <div class="tap" onclick="togglehide()"><h6 class="shake-slow shake-constant shake-constant--hover">Tap Anywhere to See Menu</h6></div>
+
+        <div class="slide1">
+            
+        <div class="viewmain animate delay02"><p onclick="togglehide()"  class="view5" style="color: white;">I Am</p></div>
+        <div class="viewmain animate delay04"><p onclick="togglehide()"  class="view6" style="color: white;">Vishal</p></div>
+        <div class="viewmain animate delay06"><p onclick="togglehide()"  class="view7" style="color: white;">Front End</p></div>
+        <div class="viewmain animate delay08"><p onclick="togglehide()"  class="view8" style="color: white;">Developer</p></div>
+    </div>
+    <div class="slide2">
+        
+        <div class="viewmain animate delay02"><a href="./about.html" class="view1"></a></div>
+        <div class="viewmain animate delay04"><a href="./education.html" class="view2"></a></div>
+        <div class="viewmain animate delay06"><a href="./mywork.html" class="view3"></a></div>
+        <div class="viewmain animate delay08"><a href="./contact.html" class="view4"></a></div>
+    </div>
+    
+</div>
+
+
+
+
+
+<div class="smcont1 animate delay02 hmobile"><a href="./about.html" class="iam">
+
+</a></div>
+<div class="smcont2 animate delay04 hmobile"><a href="./education.html" class="name">
+
+</a></div>
+<div class="smcont3 animate delay06 hmobile"><a href="./mywork.html" class="prof">
+
+</a></div>
+<div class="smcont4 animate delay08 hmobile"><a href="./contact.html" class="prof1">
+
+</a></div>
+
+
+</div>
+
+
+
+
+<script>
+function togglehide(){
+    let slide1=document.querySelector('.slide1')
+let slide2=document.querySelector('.slide2')
+let btn=document.querySelector('.click')
+if(slide1.style.display!='none' ){
+    slide1.style.display='none';
+    // slide2.style.display='block';
+
+}else{
+    slide1.style.display='block';
+    // slide2.style.display='none';
+}
+if(slide2.style.display!='block' ){
+    slide2.style.display='block';
+    // slide2.style.display='block';
+
+}else{
+    slide2.style.display='none';
+    // slide2.style.display='none';
+}
+
+}
+
+
+</script>
+</body>
+</html>
