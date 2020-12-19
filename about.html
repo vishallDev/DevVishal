@@ -1,385 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vishal Bhosale | About Me</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./animate.css">
-<!-- cdn -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      href="./images/favicon.ico"
+      type="image/icon"
+      sizes="16x16"
+    />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="./animate.css" />
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-</head>
-<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  </head>
+  <body>
+    <!-- Navigation starts here -->
+    <header class="animate-bottom">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+        <a href="./index.html">
+          <img
+            src="./images/logo.png"
+            alt="Logo"
+            class="mx-2"
+            style="width: 40px"
+          />
+        </a>
 
+        <a class="navbar-brand text-dark-50 sticky-bottom" href="./index.html"
+          >WebDevVishal</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold" href="./index.html"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
 
-
-
-  <!-- Navigation starts here -->
-    <header class=" animate-bottom">
- <nav class="navbar navbar-expand-sm navbar-dark bg-success">
-<a href="./index.html">
-  <img src="./images/logo.png" alt="Logo" class="mx-2" style="width:40px;">
-</a>
-
-  <a class="navbar-brand text-dark-50  sticky-bottom" href="./index.html">WebDevVishal</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav  ">
-      <li class="nav-item ">
-        <a class="nav-link  font-weight-bold" href="./index.html">Home<span class="sr-only">(current)</span></a>
-      </li>
-
-      <li class="nav-item ">
-        <a class="nav-link active font-weight-bold" href="./about.html">About Me<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item  font-weight-bold">
-        <a class="nav-link" href="./education.html">Education</a>
-      </li>
-      <li class="nav-item   font-weight-bold">
-        <a class="nav-link" href="./mywork.html">My Work</a>
-      </li>
-      <li class="nav-item  font-weight-bold">
-          <a class="nav-link" href="./contact.html">Contact Us</a>
-        </li>
-        
-
-    </ul>
-    </div>
-</nav>
- <!-- Navigation starts ends -->
-
-
-
-
-
-
-<!-- alert for my portfolio deatails  -->
-<div class="alert alert-light text-capitalize alert-dismissible fade show bg-dark text-light m-0 outline-none" role="alert">
-    Hello Everyone, Welcome to My portfolio. you can ping me at. <a href="https://twitter.com/_smart_ghost" class="alert-link text-light"> @ Vishal Bhosale</a>
-    <button type="button" class="close text-danger  " data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-  </div>
-<!-- alert for my portfolio deatails  -->
-
-
-
-
-
-
-
-<!-- carousal starts herer -->
-<div id="carouselExampleInterval" class="carousel slide carousel-fade" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-interval="2000">
-        <img src="./images/back1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption  d-md-block">
-            <h5>Web Designing & UI/UX.</h5>
-
-          </div>
-      </div>
-      <div class="carousel-item" data-interval="2000">
-        <img src="./images/back2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption  d-md-block">
-            <h5>Front-End Development</h5>
-            
-          </div>
-      </div>
-      <div class="carousel-item" data-interval="2000">
-        <img src="./images/back3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption  d-md-block">
-            <h5>Simple Design And Clear Message</h5>
-          </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-<!-- carousal ends herer -->
-</header>
-
-
-<section class=" animate-bottom">
-
-<div class="container-fluid">
-    <h2 class="text-center text-capitalize mt-2 pt-4 font-weight-normal font-weight-bolder" >about me</h2>
-    <hr class="  w-25 mx-auto pt-0">
-
-<div class="d-flex  justify-content-center my-3 spanover"  > 
-  <h5 class="spanbest px-0 mx-0">I Am <span class="type spanbest1"></span></h5>
-
-</div>
-
-
-
-    <div class="row mb-4">
-        <div class="col-lg-6 col-md-12 col-sm-12 col-12 ">
-            <img src="./images/DSC_0401-01.jpg" class="img-fluid shadow-lg rounded mt-3" alt="">
+            <li class="nav-item">
+              <a class="nav-link active font-weight-bold" href="./about.html"
+                >About Me<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item font-weight-bold">
+              <a class="nav-link" href="./education.html">Education</a>
+            </li>
+            <li class="nav-item font-weight-bold">
+              <a class="nav-link" href="./mywork.html">My Work</a>
+            </li>
+            <li class="nav-item font-weight-bold">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 col-12 ">
-            <h3 class="pt-0 text-center text-bold text-dark-50 font-weight-bold mt-3">Who Am I ?</h3>
-            <p class="pt-0 text-dark-50 font-weight-bold"> Hi i am Vishal Bhosale. Web Developer from pune.I have a passion for web development and to create websites Which Will Be fully Responsive for Web And Mobile Devices.i believe in designing the site simple and clean rather than making it complex And convey The message That You want to send.i can create website which can run across all devices with latest technology available.please feel free to surf my projects which i created till now.i am still in learning phase improving my skills day by day.
-                Seeking for a challenging position with a creative work environment to enhance expertise in web development and web design that allows for implementation of communication, service, and design skills to the programming essentials.
+      </nav>
+      <!-- Navigation starts ends -->
+
+      <!-- alert for my portfolio deatails  -->
+      <div
+        class="alert alert-light text-capitalize alert-dismissible fade show bg-dark text-light m-0 outline-none"
+        role="alert"
+      >
+        Hello Everyone, Welcome to My portfolio. you can ping me at.
+        <a
+          href="https://twitter.com/_smart_ghost"
+          class="alert-link text-light"
+        >
+          @ Vishal Bhosale</a
+        >
+        <button
+          type="button"
+          class="close text-danger"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- alert for my portfolio deatails  -->
+
+      <!-- carousal starts herer -->
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="2000">
+            <img src="./images/back1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5>Web Designing & UI/UX.</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-interval="2000">
+            <img src="./images/back2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5>Front-End Development</h5>
+            </div>
+          </div>
+          <div class="carousel-item" data-interval="2000">
+            <img src="./images/back3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block">
+              <h5>Simple Design And Clear Message</h5>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleInterval"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleInterval"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- carousal ends herer -->
+    </header>
+
+    <section class="animate-bottom">
+      <div class="container-fluid">
+        <h2
+          class="text-center text-capitalize mt-2 pt-4 font-weight-normal font-weight-bolder"
+        >
+          about me
+        </h2>
+        <hr class="w-25 mx-auto pt-0" />
+
+        <div class="d-flex justify-content-center my-3 spanover">
+          <h5 class="spanbest px-0 mx-0">
+            I Am <span class="type spanbest1"></span>
+          </h5>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+            <img
+              src="./images/DSC_0401-01.jpg"
+              class="img-fluid shadow-lg rounded mt-3"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+            <h3
+              class="pt-0 text-center text-bold text-dark-50 font-weight-bold mt-3"
+            >
+              Who Am I ?
+            </h3>
+            <p class="pt-0 text-dark-50 font-weight-bold">
+              Hi i am Vishal Bhosale. Web Developer from pune.I have a passion
+              for web development and to create websites Which Will Be fully
+              Responsive for Web And Mobile Devices.i believe in designing the
+              site simple and clean rather than making it complex And convey The
+              message That You want to send.i can create website which can run
+              across all devices with latest technology available.please feel
+              free to surf my projects which i created till now.i am still in
+              learning phase improving my skills day by day. Seeking for a
+              challenging position with a creative work environment to enhance
+              expertise in web development and web design that allows for
+              implementation of communication, service, and design skills to the
+              programming essentials.
             </p>
-            <a href=mailto:vb341997@gmail.com?subject="contacting_you_from_portfolio" class="btn btn-outline-dark text-uppercase  px-3  ">  Hire Me  </a>
+            <a
+              href="mailto:vb341997@gmail.com?subject"
+              ="contacting_you_from_portfolio"
+              class="btn btn-outline-dark text-uppercase px-3"
+            >
+              Hire Me
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- cards section starts herer -->
+    <section>
+      <div class="container">
+        <h2
+          class="text-center text-capitalize mt-2 pt-4 font-weight-normal font-weight-bolder"
+        >
+          Skills I Have
+        </h2>
+        <hr class="w-25 mx-auto pt-0" />
+
+        <div class="row text-center mb-1">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="card bg-light text-dark font-weight-bold">
+              <img
+                class="card-img-top"
+                src="./images/f1.jpg"
+                alt="Card image"
+              />
+              <div class="card-body">
+                <h4 class="card-title font-weight-bold">Front-end Developer</h4>
+                <p class="card-text">
+                  I like to code things from scratch, and enjoy bringing ideas
+                  to life in the browser.
+                </p>
+                <h6 class="card-title font-weight-bold">Languages I speak:</h6>
+                <p class="card-text">HTML, Pug, JavaScript, CSS, Sass</p>
+                <h6 class="card-title font-weight-bold">Dev Tools:</h6>
+                <p class="card-text">
+                  Bootstrap,Wordpress, Bitbucket, Codepen, Github, Tailwind,
+                  Materialise
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="card bg-light text-dark font-weight-bold">
+              <img
+                class="card-img-top"
+                src="./images/f2.jpg"
+                alt="Card image"
+              />
+              <div class="card-body">
+                <h4 class="card-title font-weight-bolder">Designer</h4>
+                <p class="card-text">
+                  I value simple content structure, clean design patterns, and
+                  thoughtful interactions.
+                </p>
+                <h6 class="card-title font-weight-bold">
+                  Things I enjoy designing:
+                </h6>
+                <p class="card-text">UX, UI, Web, Mobile, Apps, Logos</p>
+                <h6 class="card-title font-weight-bold">Design Tools:</h6>
+                <p class="card-text">
+                  Figma, Adobe XD, Pen & Paper, Sketch, Invision, Adobe
+                  Photoshop
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container align-items-center justify-items-center my-4">
+        <div class="mx-auto text-center mt-3">
+          <h4 class="font-weight-bold p-1">Knowledge</h4>
+          <hr class="w-25 mx-auto mt-0 font-weight-bolder" />
+        </div>
+
+        <div class="progress my-3">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an"
+            role="progressbar"
+            aria-valuenow="90"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 90%"
+          >
+            HTML 95%
+          </div>
+        </div>
+
+        <div class="progress my-3">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an"
+            role="progressbar"
+            aria-valuenow="85"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 85%"
+          >
+            CSS 90%
+          </div>
+        </div>
+
+        <div class="progress my-3">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an"
+            role="progressbar"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 75%"
+          >
+            JAVASCRIPT \ JQUERY 90%
+          </div>
+        </div>
+
+        <div class="progress my-3">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an"
+            role="progressbar"
+            aria-valuenow="90"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 90%"
+          >
+            FRAMEWORK's 94%
+          </div>
+        </div>
+
+        <div class="progress my-3">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an"
+            role="progressbar"
+            aria-valuenow="90"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 90%"
+          >
+            TAILWIND-CSS \ BOOTSTRAP 90%
+          </div>
+        </div>
+
+        <div class="progress my-3">
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an"
+            role="progressbar"
+            aria-valuenow="90"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 90%"
+          >
+            SASS 90%
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cards section ends herer -->
+
+    <!-- number secton starts herer -->
+    <section class="bg-primary my-5">
+      <article class="py-4 text-center text-white">
+        <h3 class="display-6">+917972319567</h3>
+        <p class="text-capitalize">if you want to hire me, call me now.</p>
+        <a class="btn btn-warning py-2 btn-lg" href="tel:+91-7972319567"
+          >Call Now</a
+        >
+      </article>
+    </section>
+    <!-- number secton ends herer -->
+
+    <!-- footer comer here -->
+
+    <div class="container mt-3">
+      <footer class="mastfoot mt-auto text-center">
+        <div class="inner">
+          <p>
+            &copy All Rights Reserved.
+            <a
+              href="https://twitter.com/_smart_ghost"
+              class="text-decoration-none font-weight-bold"
+              >WebDevVishal</a
+            >, by
+            <a
+              href="https://linkedin.com/in/vishall-Developer/"
+              class="text-decoration-none font-weight-bold"
+              >Designed by Vishal bhosale.</a
+            >
+            <a
+              href="https://facebook.com/WebDevVishal"
+              class="fa fa-facebook text-danger mx-1 p-2 text-decoration-none"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="lets be friend's"
+            ></a>
+            <a
+              href="https://twitter.com/_smart_ghost"
+              target="blank"
+              class="fa fa-twitter text-danger mx-1 p-2 text-decoration-none"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Come do a tweet"
+            ></a>
+            <a
+              href="https://instagram.com/vish_all_"
+              target="blank"
+              class="fa fa-instagram text-danger mx-1 p-2 text-decoration-none"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Be Free To DM"
+            ></a>
+            <a
+              href="https://linkedin.com/in/vishall-Developer/"
+              class="fa fa-linkedin text-danger mx-1 p-2 text-decoration-none"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Hire Me..!!!"
+            ></a>
+            <a
+              href="https://github.com/webdev-vishal"
+              class="fa fa-github text-danger mx-1 p-2 text-decoration-none"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Please review and give feedback"
+            ></a>
+
+            <a
+              href="https://wa.me/<+918421501975>"
+              class="fa fa-whatsapp text-danger mx-1 p-2 text-decoration-none"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Anytime feel free to contact"
+            ></a>
+          </p>
+        </div>
+      </footer>
     </div>
 
-</div>
-</section>
-
-
-
-
-<!-- cards section starts herer -->
-<section >
-<div class="container">
-    <h2 class="text-center text-capitalize mt-2 pt-4 font-weight-normal font-weight-bolder" >Skills I Have</h2>
-    <hr class="w-25 mx-auto pt-0">
-
-      <div class="row text-center mb-1">
-          <div class="col-lg-6 col-md-6 col-12">
-            <div class="card bg-light text-dark font-weight-bold" >
-                <img class="card-img-top  " src="./images/f1.jpg" alt="Card image">
-                <div class="card-body">
-                  <h4 class="card-title font-weight-bold">Front-end Developer</h4>
-                  <p class="card-text">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                  <h6 class="card-title font-weight-bold">Languages I speak:</h6>
-                  <p class="card-text">HTML, Pug, JavaScript, CSS, Sass</p>
-                  <h6 class="card-title font-weight-bold">Dev Tools:</h6>
-                  <p class="card-text">Bootstrap,Wordpress,
-                    Bitbucket,
-                    Codepen,
-                    Github,
-                    Tailwind,
-                    Materialise</p>
-                  
-                
-                </div>
-              </div>
-          </div>
-     
-          <div class="col-lg-6 col-md-6 col-12">
-            <div class="card bg-light text-dark font-weight-bold" >
-                <img class="card-img-top    " src="./images/f2.jpg" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title font-weight-bolder">Designer</h4>
-                    <p class="card-text">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-                    <h6 class="card-title font-weight-bold">Things I enjoy designing:</h6>
-                    <p class="card-text">UX, UI, Web, Mobile, Apps, Logos</p>
-                    <h6 class="card-title font-weight-bold">Design Tools:</h6>
-                    <p class="card-text">Figma,
-                        Adobe XD,
-                        Pen & Paper,
-                        Sketch,
-                        Invision,
-                        Adobe Photoshop </p>
-                
-                </div>
-              </div>
-          </div>
-      </div>
-
-    </div>
-
-
-    <div class="container align-items-center justify-items-center my-4">
-      <div class="mx-auto text-center mt-3">
-        <h4 class="font-weight-bold p-1">Knowledge</h4>
-        <hr class="w-25 mx-auto mt-0 font-weight-bolder">
-      </div>
-
-      <div class="progress my-3  ">
-          
-          <div class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">HTML 95%</div>
-          
-        </div>
-    
-    
-    
-      <div class="progress my-3 ">
-          
-          <div class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">CSS 90%</div>
-          
-        </div>
-    
-           <div class="progress my-3 ">
-          
-          <div class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">JAVASCRIPT \ JQUERY 90%</div>
-          
-        </div>
-    
-        <div class="progress my-3 ">
-          
-          <div class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">FRAMEWORK's 94%</div>
-          
-        </div>
-    
-        <div class="progress my-3 ">
-          
-          <div class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">TAILWIND-CSS \ BOOTSTRAP 90%</div>
-          
-        </div>
-    
-        <div class="progress my-3 ">
-          
-          <div class="progress-bar progress-bar-striped progress-bar-animated font-weight-bold bg-success text-light an" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">SASS 90%</div>
-          
-        </div>
-    
-        
-    
-      </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-</section>
-
-<!-- cards section ends herer -->
-
-<!-- number secton starts herer -->
-<section class="bg-primary my-5 ">
-<article class="py-4 text-center text-white">
-<h3 class="display-6"> +917972319567 </h3>
-<p class="text-capitalize">if you want to hire me, call me now.</p>
-<a  class =" btn btn-warning py-2 btn-lg" href="tel:+91-7972319567">Call Now</a>
-</article>
-</section>
-<!-- number secton ends herer -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- footer comer here -->
-
-<div class="container mt-3">
-
-    <footer class="mastfoot mt-auto text-center">
-        <div class="inner ">
-            <p> &copy All Rights Reserved. <a href="https://twitter.com/_smart_ghost" class="text-decoration-none font-weight-bold">WebDevVishal</a>, by <a href="https://linkedin.com/in/vishall-Developer/" class="text-decoration-none font-weight-bold" >Designed by Vishal bhosale.</a>
-                <a
-                href="https://facebook.com/WebDevVishal"
-                class="fa fa-facebook text-danger mx-1 p-2 text-decoration-none"  
-                data-toggle="tooltip" data-placement="top" title="lets be friend's"
-              ></a>
-              <a
-                href="https://twitter.com/_smart_ghost"
-                target="blank"
-                class="fa fa-twitter text-danger mx-1 p-2 text-decoration-none"
-                data-toggle="tooltip" data-placement="top" title="Come do a tweet"
-              ></a>
-              <a
-                href="https://instagram.com/vish_all_"
-                target="blank"
-                class="fa fa-instagram text-danger mx-1 p-2 text-decoration-none"
-                data-toggle="tooltip" data-placement="top" title="Be Free To DM"
-              ></a>
-              <a
-                href="https://linkedin.com/in/vishall-Developer/"
-                class="fa fa-linkedin text-danger mx-1 p-2 text-decoration-none"
-                data-toggle="tooltip" data-placement="top" title="Hire Me..!!!"
-              ></a>
-              <a href="https://github.com/webdev-vishal" class="fa fa-github text-danger mx-1 p-2 text-decoration-none" data-toggle="tooltip" data-placement="top" title="Please review and give feedback"></a>
-    
-              <a href="https://wa.me/<+918421501975>" class="fa fa-whatsapp text-danger mx-1 p-2 text-decoration-none" data-toggle="tooltip" data-placement="top" title="Anytime feel free to contact"></a>
-            
-            
-            
-            </p>
-        </div>
-    </footer>
-</div>
-
-
-
-<!-- footer comer here -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-  
-
-var typed = new Typed('.type', {
-  strings: ['Web Developer. ', 'Front End Enthusiast. ','UI/UX Designer. ','CSS Writer.','Programmer','Python Lover'],
-  typeSpeed: 30,
-  backSpeed: 50,  
-  backDelay: 1500,
-  cursorChar: '<&#92;>',
-  loop:true,
-});
-
-
-                         
-</script>
-
-
-
-    
-
-
-
-
-
-</body> 
+    <!-- footer comer here -->
+
+    <script>
+      var typed = new Typed(".type", {
+        strings: [
+          "Web Developer. ",
+          "Front End Enthusiast. ",
+          "UI/UX Designer. ",
+          "CSS Writer.",
+          "Programmer",
+          "Python Lover",
+        ],
+        typeSpeed: 30,
+        backSpeed: 50,
+        backDelay: 1500,
+        cursorChar: "<&#92;>",
+        loop: true,
+      });
+    </script>
+  </body>
 </html>

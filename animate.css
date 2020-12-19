@@ -1,12 +1,18 @@
-@keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
   }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
 
-  .animate-bottom {
-    position: relative;
-  
-    animation-name: animatebottom;
-    animation-duration: 1s
-    /* animation-delay:0.5s; */
-  }
+.animate-bottom {
+  position: relative;
+
+  animation-name: animatebottom;
+  animation-duration: 1s;
+  /* animation-delay:0.5s; */
+}
