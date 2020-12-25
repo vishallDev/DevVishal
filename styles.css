@@ -28,3 +28,10 @@
 .spanover {
   overflow: hidden;
 }
+.navbarbg{
+  background: linear-gradient(to right, #5433ff, #1683b3, #a5fecb);
+}
+.navbar-toggler-icon{
+  filter: invert(1);
+  
+}
