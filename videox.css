@@ -5,7 +5,89 @@
     min-width: 100%; 
     min-height: 100%;
     /* z-index: -1; */
-    filter: opacity(0.7);
+    filter: opacity(0.5);
+
+    /* opacity: 0.7; */
   }
 
- 
+ .text-black{
+   color: black;
+   font-weight: bolder;
+ }
+
+ .bgimg-custom{
+  /* background: linear-gradient  (to right, #03001e, #7303c0, #ec38bc, #fdeff9); */
+
+   -webkit-background-clip: text;
+   font-weight: bolder;
+   font-weight: 900;
+   color: transparent;
+   /* transition: all ease 0.9s; */
+  animation: change 10s  infinite  ease;
+ }
+
+ @keyframes change  {
+  0%{
+  background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+  -webkit-background-clip: text;
+
+  }
+  
+  10% {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+   -webkit-background-clip: text;
+
+  }
+  
+  20% {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+   -webkit-background-clip: text;
+
+  }
+  
+  30% {
+    background: linear-gradient(to right, #000046, #1cb5e0);
+   -webkit-background-clip: text;
+    
+  }
+  
+  40% {
+    background: linear-gradient(to right, #000428, #004e92); 
+    -webkit-background-clip: text;
+  }
+  
+  50% {
+    background: linear-gradient(to right, #000000, #434343);
+    -webkit-background-clip: text;
+
+  }
+  
+  60% {
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    -webkit-background-clip: text;
+    
+  }
+  
+  70% {
+    background: linear-gradient(to right, #00bf8f, #001510);
+    -webkit-background-clip: text;
+
+  }
+  80% {
+    background: linear-gradient(to right, #6441a5, #2a0845);
+    -webkit-background-clip: text;
+
+  }
+  
+  90% {
+    background: linear-gradient(to right, #f0c27b, #4b1248);
+    -webkit-background-clip: text;
+
+  }
+  
+  100% {
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    -webkit-background-clip: text;
+
+  }
+ }
