@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vishal Bhosale | Contact Me</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./videox.css">
     <link
       rel="icon"
       href="./images/favicon.ico"
@@ -31,6 +32,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body class="bg-light">
+    <video autoplay muted loop id="myVideo">
+      <source src="./videos/imag.mp4" type="video/mp4">
+    </video>
     <header>
       <!-- Navigation starts here -->
       <nav class="navbar navbar-expand-sm navbar-dark navbarbg">
@@ -100,14 +104,14 @@
       <class class="lead text-capitalize">Please feel free to contact. </class>
     </div>
 
-    <div class="container-fluid mt-1 mb-5 animate-bottom">
-      <div class="w-50 mx-auto font-weight-bold">
+    <div class="container mt-1 mb-5 animate-bottom">
+      <div class=" w-75 mx-auto font-weight-bold">
         <form class="needs-validation" novalidate netlify>
           <div class="form-group">
             <label for="uname">Name</label>
             <input
               type="text"
-              class="form-control border-dark"
+              class="form-control border-dark bg-dark text-white"
               id="name"
               placeholder="Enter Name"
               name="name"
@@ -120,7 +124,7 @@
             <label for="email">Email</label>
             <input
               type="email"
-              class="form-control border-dark"
+              class="form-control border-dark  bg-dark text-white"
               id="email"
               placeholder="Enter Email"
               name="email"
@@ -132,14 +136,14 @@
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Enter Your Message</label>
             <textarea
-              class="form-control border-dark"
+              class="form-control border-dark bg-dark text-white"
               id="exampleFormControlTextarea1"
               name="message"
               rows="3"
             ></textarea>
           </div>
           <button
-            class="btn btn-block btn-outline-danger font-weight-bolder my-4"
+            class="btn btn-block btn-success font-weight-bolder my-4"
             name="btn-send"
           >
             Send
@@ -152,7 +156,7 @@
 
     <!-- footer starts here -->
 
-    <footer class="mastfoot mt-5 text-center bg-light animate-bottom">
+    <footer class="mastfoot mt-5 text-center  animate-bottom">
       <div class="inner">
         <p>
           &copy All Rights Reserved.
