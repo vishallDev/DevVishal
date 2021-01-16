@@ -51,7 +51,7 @@ a {
 }
 .iam:hover::after {
   content: "ABOUT";
-  color: #c3073f;
+  color: #ff0000;
 }
 
 /* firstcontaine */
@@ -73,7 +73,7 @@ a {
 }
 .name:hover::after {
   content: "EDUCATION";
-  color: rgb(0, 255, 128);
+  color: rgb(240, 0, 0);
 }
 
 /* second container */
@@ -97,7 +97,7 @@ a {
 }
 .prof:hover::after {
   content: "MY WORK";
-  color: #80ff00;
+  color: #ff2d2d;
 }
 
 /* second container */
@@ -121,7 +121,7 @@ a {
 }
 .prof1:hover::after {
   content: "CONTACT ME";
-  color: #c000ff;
+  color: #ff2222;
 }
 
 /* second container */
