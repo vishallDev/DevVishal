@@ -15,7 +15,7 @@ body {
 a {
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
-  font-size: 95.4px;
+  font-size: 97.4px;
   font-weight: 100;
   line-height: 120.24px;
   padding: 8px;
@@ -47,7 +47,7 @@ a {
   transform: translateX(20px);
 }
 .iam::after {
-  content: "I Am";
+  content: "Hello.";
 }
 .iam:hover::after {
   content: "ABOUT";
@@ -69,7 +69,7 @@ a {
   transform: translateX(20px);
 }
 .name::after {
-  content: "Vishal";
+  content: "I Am";
 }
 .name:hover::after {
   content: "EDUCATION";
@@ -93,7 +93,7 @@ a {
   transform: translateX(20px);
 }
 .prof::after {
-  content: " Front End";
+  content: "Vishal";
 }
 .prof:hover::after {
   content: "MY WORK";
@@ -117,7 +117,7 @@ a {
   transform: translateX(20px);
 }
 .prof1::after {
-  content: "Developer";
+  content: "Bhosale";
 }
 .prof1:hover::after {
   content: "CONTACT ME";
