@@ -177,7 +177,32 @@ a {
 @media only screen and (max-width: 768px) {
   body {
     background: url(./images/bg1.jpg) center center/cover no-repeat;
+
   }
+  .mainname{
+    position: absolute;
+}
+.set{
+  transform: scale(0.8);
+}
+
+/* .set:nth-child(1), */
+/* .set:nth-child(2), */
+/* .set:nth-child(3), */
+/* .set:nth-child(4), */
+.set:nth-child(5),
+/* .set:nth-child(6), */
+.set:nth-child(7),
+.set:nth-child(8){
+display: none;  
+}
+
+
+
+
+ .set2{
+ display: none;
+}
   a {
     text-decoration: none;
     font-family: "Times New Roman", Times, serif;
@@ -187,6 +212,7 @@ a {
     font-weight: bolder;
     position: relative;
     letter-spacing: 3px;
+    
   }
 
   p {
@@ -199,6 +225,7 @@ a {
     position: relative;
     letter-spacing: 3px;
     line-height: 100px;
+    text-align:center;
   }
   .viewmain {
     display: block;
@@ -210,19 +237,19 @@ a {
 
   .view1::after {
     content: "About";
-    color: #fcfcfc;
+    color: #ff0101;
   }
   .view2::after {
     content: "Education";
-    color: #0ffff3;
+    color: #ff0f0f;
   }
   .view3::after {
     content: "My Work";
-    color: #00fff2;
+    color: #ff0000;
   }
   .view4::after {
     content: "Contact Me";
-    color: #00fff2;
+    color: #ff0000;
   }
 
   .slide1 {
@@ -256,6 +283,7 @@ a {
     animation-delay: 4s;
     line-height: 20px;
   }
+ 
 }
 @media only screen and (min-width: 768px) {
   .mobile {

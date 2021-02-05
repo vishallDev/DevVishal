@@ -19,18 +19,186 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 </head>
-<body>
-<div class="maincontainer">
+<style>
+    #mydiv{
+  display: none;
+  text-align: center;
+}
+.load{
+        position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* flex-direction: row; */
+    }
+
+    .set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0%;
+    left: 0%;
+    pointer-events: none;
+}
+
+.set div{
+    position: absolute;
+    display: block;
+}
+.set div:nth-child(1){
+    left: 20%;
+    animation: animate 5s 0s linear infinite;
+}
+
+
+.set div:nth-child(2){
+    left: 50%;
+    animation: animate 4s -5s linear infinite;
+}
+
+
+
+.set div:nth-child(3){
+    left: 70%;
+    animation: animate 8s 0s linear infinite;
+}
+
+
+.set div:nth-child(4){
+    left: 0%;
+    animation: animate 7s -5s linear infinite;
+}
+
+
+.set div:nth-child(5){
+    left: 85%;
+    animation: animate 8s -10s linear infinite;
+}
+
+.set div:nth-child(6){
+    left: 0%;
+    animation: animate 4s 0s linear infinite;
+}
+
+.set div:nth-child(7){
+    left: 15%;
+    animation: animate 9s 0s linear infinite;
+}
+
+.set div:nth-child(8){
+    left: 60%;
+    animation: animate-loader 10s 0s linear infinite;
+}
+
+
+
+
+
+
+@keyframes animate-loader {
+    0%{
+opacity: 0;
+top: -10%;
+transform: translate(20px ) rotate(0deg);
+    }
+
+    10%{
+opacity: 1;
+top: 20%;
+transform: translate(-20px ) rotate(45deg);
+    }
+    20%{
+transform: translate(20px ) rotate(90deg);
+    }
+    40%{
+transform: translate(-20px ) rotate(180deg);
+    }
+    60%{
+transform: translate(20px ) rotate(180deg);
+    }
+    80%{
+transform: translate(-20px ) rotate(90deg);
+    }
+    100%{
+        top: 110%;
+transform: translate(20px ) rotate(225deg);
+    }
+
+}
+.mainname{
+    position: absolute;
+    left: 9%;
+    color: rgb(253, 253, 253);
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, ;
+    width: 30%;
+margin: 0 auto;
+}
+.set2{
+    transform: scale(2) rotateY(180deg);
+    filter: blur(2px);
+}
+.set3{
+    transform: scale(0.8) rotateX(180deg);
+    filter: blur(4px);
+}
+
+</style>
+<body onload="myFunction()">
+
+<!-- preloader here -->
+<section class="load">
+    <h1 class="mainname">Web Dev Vishal</h1>
+    <div class="set">
+        <div><img src="./images/loader/leaves1.png" alt=""></div>
+        <div><img src="./images/loader/leaves2.png" alt=""></div>
+        <div><img src="./images/loader/leaves3.png" alt=""></div>
+        <div><img src="./images/loader/leaves4.png" alt=""></div>
+        <div><img src="./images/loader/leaves1.png" alt=""></div>
+        <div><img src="./images/loader/leaves2.png" alt=""></div>
+        <div><img src="./images/loader/leaves3.png" alt=""></div>
+        <div><img src="./images/loader/leaves4.png" alt=""></div>
+    </div>
+    <div class="set set2">
+        <div><img src="./images/loader/leaves1.png" alt=""></div>
+        <div><img src="./images/loader/leaves2.png" alt=""></div>
+        <div><img src="./images/loader/leaves3.png" alt=""></div>
+        <div><img src="./images/loader/leaves4.png" alt=""></div>
+        <div><img src="./images/loader/leaves1.png" alt=""></div>
+        <div><img src="./images/loader/leaves2.png" alt=""></div>
+        <div><img src="./images/loader/leaves3.png" alt=""></div>
+        <div><img src="./images/loader/leaves4.png" alt=""></div>
+    </div>
+    <div class="set set3">
+        <div ><img src="./images/loader/leaves1.png" alt=""></div>
+        <div ><img src="./images/loader/leaves2.png" alt=""></div>
+        <div ><img src="./images/loader/leaves3.png" alt=""></div>
+        <div ><img src="./images/loader/leaves4.png" alt=""></div>
+        <div ><img src="./images/loader/leaves1.png" alt=""></div>
+        <div ><img src="./images/loader/leaves2.png" alt=""></div>
+        <div ><img src="./images/loader/leaves3.png" alt=""></div>
+        <div ><img src="./images/loader/leaves4.png" alt=""></div>
+    </div>
+</section>
+<!-- preloader here -->
+
+
+<div class="maincontainer" id="mydiv">
 
     <div class="mobile">
         <div class="tap" onclick="togglehide()"><h6 class="shake-slow shake-constant shake-constant--hover">Tap Anywhere to See Menu</h6></div>
 
         <div class="slide1">
             
-        <div class="viewmain animate delay02"><p onclick="togglehide()"  class="view5" style="color: white;">I Am</p></div>
-        <div class="viewmain animate delay04"><p onclick="togglehide()"  class="view6" style="color: white;">Vishal</p></div>
-        <div class="viewmain animate delay06"><p onclick="togglehide()"  class="view7" style="color: white;">Front End</p></div>
-        <div class="viewmain animate delay08"><p onclick="togglehide()"  class="view8" style="color: white;">Developer</p></div>
+        <div class="viewmain animate delay02"><p onclick="togglehide()"  class="view5" style="color: white;">Hello.</p></div>
+        <div class="viewmain animate delay04"><p onclick="togglehide()"  class="view6" style="color: white;">I Am</p></div>
+        <div class="viewmain animate delay06"><p onclick="togglehide()"  class="view7" style="color: white;">Vishal</p></div>
+        <div class="viewmain animate delay08"><p onclick="togglehide()"  class="view8" style="color: white;">Bhosale</p></div>
     </div>
     <div class="slide2">
         
@@ -66,6 +234,23 @@
 
 
 <script>
+
+//prealoader 
+
+var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 4500);
+    }
+    
+    function showPage() {
+      document.querySelector(".load").style.display = "none";
+      document.getElementById("mydiv").style.display = "flex";
+    }
+// 
+
+
+
 function togglehide(){
     let slide1=document.querySelector('.slide1')
 let slide2=document.querySelector('.slide2')
