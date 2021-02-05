@@ -179,9 +179,7 @@ a {
     background: url(./images/bg1.jpg) center center/cover no-repeat;
 
   }
-  .mainname{
-    position: absolute;
-}
+
 .set{
   transform: scale(0.8);
 }
