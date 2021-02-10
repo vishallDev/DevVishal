@@ -35,3 +35,28 @@
   64%  { transform: scale(1,1)    translateY(0); }
   100% { transform: scale(1,1)    translateY(0); }
 }
+
+
+
+
+
+@media only screen and (min-width:768px){
+
+  
+  
+  .nav-item .nav-link{
+    display: block;
+  position: relative;
+  
+  }
+  .nav-link{
+    transition: all ease 0.2s ;
+  }
+  ul:hover li a{
+    filter: blur(2px);
+  }
+  ul li a:hover{
+    transform: scale(1.2);
+    filter: blur(0);
+  }
+  }
