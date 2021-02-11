@@ -235,7 +235,7 @@
 
         <div class="row text-center mb-1">
           <div class="col-lg-6 col-md-6 col-12">
-            <div class="card bg-light text-dark font-weight-bold">
+            <div class="card bg-light text-dark font-weight-bold tilter">
               <img
                 class="card-img-top"
                 src="./images/f1.jpg"
@@ -259,7 +259,7 @@
           </div>
 
           <div class="col-lg-6 col-md-6 col-12">
-            <div class="card bg-light text-dark font-weight-bold">
+            <div class="card bg-light text-dark font-weight-bold tilter1">
               <img
                 class="card-img-top"
                 src="./images/f2.jpg"
@@ -469,6 +469,21 @@
     </div>
 
     <!-- footer comer here -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script> type="text/javascript">
+	VanillaTilt.init(document.querySelector(".tilter"), {
+		max: 20,
+		speed: 300,
+    easing:"cubic-bezier(.03,.98,.52,.99)",
+    gyroscope:true
+	});
+	VanillaTilt.init(document.querySelector(".tilter1"), {
+		max: 20,
+		speed: 300,
+    easing:"cubic-bezier(.03,.98,.52,.99)",
+    gyroscope:true
+	});
+</script>
 
     <script>
       var typed = new Typed(".type", {
